@@ -129,6 +129,11 @@ public class Flight implements Comparable<Flight>, Iterable<Passenger>{
             return Arrays.asList(passengers).iterator();    //return passengers array in sorted order
         }
     }
+
+    public Iterable<Passenger> getOrderedPassengers(){
+        FlightIterable orderedPassengers = new FlightIterable();
+        return  orderedPassengers;
+    }
 }
 
 
